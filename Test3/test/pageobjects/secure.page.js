@@ -9,8 +9,8 @@ class SecurePage extends Page {
     /**
      * define selectors using getter methods
      */
-    get alert () {
-        return $('p.Mui-error');
+    get flashAlert () {
+        return $('.flash-error');
     }
 }
 

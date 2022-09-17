@@ -8,6 +8,9 @@ module.exports = class Page {
     * @param path path of the sub page (e.g. /path/to/page.html)
     */
     open (path) {
-        return browser.url(`https://admin.dev.bipbip.com/${path}`)
+        return browser.url(`https://github.com/${path}`)
     }
+
+    logout (path) {
+        return browser.url(`https://github.com/${path}`)    }
 }

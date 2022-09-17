@@ -10,18 +10,15 @@ class LoginPage extends Page {
      * define selectors using getter methods
      */
     get inputUsername () {
-        // id
-        return $('input[type="email"]');
+        return $('#login_field');
     }
 
     get inputPassword () {
-        // id
-        return $('input[type="password"]');
+        return $('#password');
     }
 
     get btnSubmit () {
-        // attribute (properties) of selector
-        return $('button[type="submit"]');
+        return $('input[type="submit"]');
     }
 
     /**
@@ -40,6 +37,11 @@ class LoginPage extends Page {
     open () {
         return super.open('login');
     }
+
+    logout () {
+        return super.open('login');
+    }
+
 }
 
 module.exports = new LoginPage();

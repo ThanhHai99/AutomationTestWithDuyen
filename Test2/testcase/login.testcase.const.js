@@ -1,6 +1,6 @@
 module.exports = {
   TC1: {
-    username: 'tranvietthanhhai',
+    username: 'tranvietthanhhai@gmail.com',
     password: 'maingocthaoduyen'
   },
   TC2: {

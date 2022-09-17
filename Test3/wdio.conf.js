@@ -20,17 +20,6 @@ exports.config = {
     // then the current working directory is where your `package.json` resides, so `wdio`
     // will be called from there.
     //
-
-    /**
-     * @ haitran
-     * Lấy ra những Test Plain có trong thư mục ./test/specs/
-     */
-
-    // './test/specs/**/*.js'
-    // ==> test\specs\duyen\example1.e2e.js
-    // ==> test\specs\hai\example2.e2e.js
-    // ==> test\specs\example.e2e.js
-
     specs: [
         './test/specs/**/*.js'
     ],
@@ -68,14 +57,7 @@ exports.config = {
         maxInstances: 5,
         //
         browserName: 'chrome',
-        acceptInsecureCerts: true,
-        "goog:chromeOptions": {
-            "args": [
-              "disable-infobars",
-              "disable-popup-blocking",
-              "disable-notifications"
-            ]
-          }
+        acceptInsecureCerts: true
         // If outputDir is provided WebdriverIO can capture driver session logs
         // it is possible to configure which logTypes to include/exclude.
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
